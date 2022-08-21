@@ -55,6 +55,17 @@ function generatePassword() {
     optionsCart.push (uppercaseList)
   )
 
+  var generatedPassword = ""
+  
+  //For loop
+  for (var i = 0; i < passwordLength; i++) {
+    var randomList = getRandomItem(optionsCart)
+    var randomChar = getRandomItem(randomList)
+    generatedPassword += randomChar 
+  }
+
+
+
 }
 
 // Get references to the #generate element
