@@ -1,5 +1,6 @@
 // Assignment code here
 function generatePassword() {
+  
   //Prompt for length
   while (true) {
       
@@ -20,6 +21,19 @@ function generatePassword() {
     break
     }
   }
+
+  //Criteria Prompts for lowercase, uppercase, number and symbols
+  var getRandomLower = window.confirm("Would you like to include lowercase letters in your password?")
+  var getRandomUpper = window.confirm("Would you like to include uppercase letters in your password?")
+  var getRandomNumber = window.confirm("Would you like to include numbers in your password?")
+  var getRandomSymbol = window.confirm("Would you like to include symbols in your password?")
+
+  //Lists for lowercase, uppercase, numbers and symbols
+  var lowercaseList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  var uppercaseList = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+  var numberList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  var symbolList = ["!", "@", "#", "$", "%", "^", "&", "*"]
+
 
 
 }
