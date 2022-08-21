@@ -34,7 +34,26 @@ function generatePassword() {
   var numberList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
   var symbolList = ["!", "@", "#", "$", "%", "^", "&", "*"]
 
+  //variable to push the seleceted criteria values
+  var optionsCart = []
 
+  //Random values
+  if (getRandomLower === true) {
+    optionsCart.push(lowercaseList)
+  }
+  if (getRandomUpper === true) {
+    optionsCart.push(uppercaseList)
+  }
+  if (getRandomNumber === true) {
+    optionsCart.push(numberList)
+  }
+  if (getRandomSymbol === true) {
+    optionsCart.push(symbolList)
+  }
+    
+  if (optionsCart.length === 0) (
+    optionsCart.push (uppercaseList)
+  )
 
 }
 
