@@ -1,4 +1,18 @@
 // Assignment code here
+function randomInt(min, max){
+  if (!max) {
+    max = min
+    min = 0
+  }
+  var rand = Math.random()
+  return Math.floor(min*(1 - rand) + rand*max)
+}
+
+function getRandomItem(list) {
+  return list[randomInt(list.length)]
+}
+
+
 function generatePassword() {
   
   //Prompt for length
@@ -63,8 +77,9 @@ function generatePassword() {
     var randomChar = getRandomItem(randomList)
     generatedPassword += randomChar 
   }
-
-
+  
+  //Display generated password to text
+  return generatedPassword
 
 }
 
